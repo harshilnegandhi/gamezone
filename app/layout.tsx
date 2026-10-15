@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: { siteName: "GameZone", type: "website", locale: "en_IN", images: ["/images/og-default.svg"] },
   twitter: { card: "summary_large_image" },
+  verification: { google: "1DUHjbSs3CZPQkrew-ClzYRLS3sg5cisAidIDTh8v88" },
 };
 const nav: [string, string][] = [["Home", "/"], ["All Blogs", "/blog"], ["PC", "/category/pc-gaming"], ["Mobile", "/category/mobile-gaming"], ["Minecraft", "/category/minecraft"], ["Esports", "/category/esports"], ["About", "/about"], ["Contact", "/contact"]];
 export default function RootLayout({ children }: { children: React.ReactNode }) {
