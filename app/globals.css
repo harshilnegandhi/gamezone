@@ -1,0 +1,12 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{color-scheme:dark}
+body{@apply bg-ink text-slate-200 antialiased;background-image:radial-gradient(circle at 15% 0,rgba(168,85,247,.18),transparent 40%),radial-gradient(circle at 90% 20%,rgba(56,189,248,.12),transparent 40%)}
+h1,h2,h3{font-family:"Trebuchet MS",Impact,system-ui,sans-serif;@apply font-black tracking-wide text-white}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes glow{0%,100%{text-shadow:0 0 12px rgba(57,255,20,.5)}50%{text-shadow:0 0 28px rgba(57,255,20,.9)}}
+.anim{animation:up .7s ease both}.glow{animation:glow 3s ease-in-out infinite}
+.btn{@apply inline-block rounded-lg bg-neon px-6 py-3 font-bold text-black transition hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(57,255,20,.6)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky}
+.card{@apply overflow-hidden rounded-xl border border-white/10 bg-panel transition hover:-translate-y-1 hover:border-violet/60 hover:shadow-[0_0_28px_rgba(168,85,247,.3)]}
+.wrap{@apply mx-auto w-full max-w-6xl px-4}
+.prose-gz p{@apply my-4 leading-8 text-slate-300}.prose-gz h2{@apply mt-10 text-2xl text-neon}.prose-gz h3{@apply mt-6 text-lg text-sky}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
